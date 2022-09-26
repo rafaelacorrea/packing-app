@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ListBags from "./components/ListBags";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section>
+      <form>
+        <input type="text" placeholder="Nome da Bag" />
+        <textarea placeholder="Insira os itens que você vai levar..." />
+        <button>Criar bag</button>
+      </form>
+      <ListBags />
+    </section>
+
   );
 }
 
